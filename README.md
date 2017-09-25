@@ -1,3 +1,3 @@
 # Welcome
 
-Life is not randome data.
+Life is not random data.
