@@ -1,1 +1,3 @@
-# basilhan.github.io
+# Welcome
+
+Life is not randome data.
