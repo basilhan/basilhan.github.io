@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<title>FloydHub Cookbook</title>
+	<style type="text/css">body {background-color: #ffeecc;}
+	</style>
+</head>
+<body>
+<h1>FloydHub Cookbook</h1>
+
+<p><em>Updated : 2017-10-03</em></p>
+
+<p>This page describes concisely the basic steps to run a job on <a href="https://www.floydhub.com/">FloydHub</a>. The online <a href="https://docs.floydhub.com/">documentation</a> is comprehensive for most purposes and relevant references will be made as we go along.</p>
+
+<p>There are two interfaces to work with : the browser and the python shell.</p>
+
+<ul>
+	<li>Login to FloydHub from the browser.</li>
+	<li>Open a shell.
+	<ul>
+		<li>Navigate to your code and data.</li>
+		<li>Execute :
+		<ul>
+			<li><span style="font-size:12px;"><span style="font-family:courier new,courier,monospace;">&gt; floyd login</span></span></li>
+		</ul>
+		</li>
+		<li>Copy the authentication token from the browser and paste it.</li>
+		<li>Some control files will be generated.</li>
+	</ul>
+	</li>
+	<li>​Through the browser,&nbsp;<a href="https://docs.floydhub.com/guides/basics/create_new/">create</a> a project.</li>
+	<li>Through the shell,&nbsp;link your project to your code and data directory by executing&nbsp;:
+	<ul>
+		<li><span style="font-size:12px;"><span style="font-family:courier new,courier,monospace;">&gt; floyd init &lt;project-name&gt;</span></span></li>
+	</ul>
+	</li>
+	<li>Some control files will be generated in the code and data directory.</li>
+	<li>Through the browser, <a href="https://docs.floydhub.com/guides/create_and_upload_dataset/">create</a> a new dataset.</li>
+	<li>Through the shell, upload the data :
+	<ul>
+		<li><span style="font-size:12px;"><span style="font-family:courier new,courier,monospace;">&gt; floyd data init &lt;project-name&gt;</span></span></li>
+		<li><span style="font-size:12px;"><span style="font-family:courier new,courier,monospace;">&gt; floyd data upload</span></span></li>
+	</ul>
+	</li>
+	<li>​Through the shell, <a href="https://docs.floydhub.com/guides/run_a_job/">run</a> your python script or call up a Jupyter Notebook.
+	<ul>
+		<li><span style="font-size:12px;"><span style="font-family:courier new,courier,monospace;">​&gt; floyd run ...arguments...</span></span></li>
+	</ul>
+	</li>
+	<li>When done,
+	<ul>
+		<li>Through the shell, logout :
+		<ul>
+			<li><span style="font-size:12px;"><span style="font-family:courier new,courier,monospace;">&gt; floyd logout</span></span></li>
+		</ul>
+		</li>
+		<li>​Through the browser, logout.</li>
+	</ul>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+</body>
+</html>
